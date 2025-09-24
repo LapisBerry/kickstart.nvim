@@ -15,6 +15,25 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        hide_by_name = {
+          '.git',
+          '.DS_Store',
+        },
+        hide_by_pattern = {},
+        always_show = {},
+        always_show_by_pattern = {
+          '.env*',
+        },
+        never_show = {
+          '.git',
+          '.DS_Store',
+        },
+        never_show_by_pattern = {},
+      },
       window = {
         mappings = {
           ['\\'] = 'close_window',
